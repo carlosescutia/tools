@@ -1,0 +1,14 @@
+######################################
+# orefine - openrefine
+######################################
+#
+
+version: "3.8"
+services:
+  openrefine:
+    image: vimagick/openrefine
+    ports:
+      - "3333:3333"
+    volumes:
+      - ./data:/data
+    restart: no
