@@ -1,0 +1,15 @@
+######################################
+# jupyter - JupyterLab for data science
+######################################
+#
+
+version: '3'
+services:
+  jupyter:
+    image: jupyter/scipy-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/home/jovyan
+    environment:
+      JUPYTER_TOKEN: "jupyter"
