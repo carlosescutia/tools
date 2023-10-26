@@ -1,0 +1,46 @@
+######################################
+# pgclients - Clientes para conectarse a servidores postgres de varias versiones
+######################################
+
+services:
+    pg10:
+        image: postgres:10-alpine
+        restart: "no"
+        volumes:
+            - ./backup:/backup
+
+    pg11:
+        image: postgres:11-alpine
+        restart: "no"
+        volumes:
+            - ./backup:/backup
+
+    pg12:
+        image: postgres:12-alpine
+        restart: "no"
+        volumes:
+            - ./backup:/backup
+
+    pg13:
+        image: postgres:13-alpine
+        restart: "no"
+        volumes:
+            - ./backup:/backup
+
+    pg14:
+        image: postgres:14-alpine
+        restart: "no"
+        volumes:
+            - ./backup:/backup
+
+    pg15:
+        image: postgres:15-alpine
+        restart: "no"
+        volumes:
+            - ./backup:/backup
+
+    pg16:
+        image: postgres:16-alpine
+        restart: "no"
+        volumes:
+            - ./backup:/backup
